@@ -2,11 +2,11 @@
 
 ## Apresentação Inicial:
 
-![](D:\Projetos\Mini Millionaire City Web\welcome\img-1.png)
+![](.\welcome\img-1.png)
 
-![](D:\Projetos\Mini Millionaire City Web\welcome\img-2.png)
+![](.\welcome\img-2.png)
 
-![](D:\Projetos\Mini Millionaire City Web\welcome\img-3.png)
+![](.\welcome\img-3.png)
 
 ## Como testar
 

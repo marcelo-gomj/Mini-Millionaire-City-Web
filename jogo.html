@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Millionaire City Web</title>
+    <link rel="stylesheet" href="Global.css">
+    <link rel="stylesheet" href="jogo.css">
+    <script src="system.js" defer></script>
+    <script src="money.js" defer></script>
+</head>
+<body>
+    <div class="box-main">
+        <div class="head-game">
+            <div class="head-gold">
+                <img src="/img/coin gold.svg" alt="gold icon">
+                <p class="head-gold-p">566</p>
+            </div>
+            
+            <div class="head-money">
+                <img src="img/money.svg" alt="money icon"/>
+                <p class="head-money-p">R$ 3.565.601</p>
+            </div>
+
+            <div class="head-progress">
+                <img src="img/star.svg" alt="star progress">
+                <span class="nivel">1</span>
+                <p class="head-progress-p">25005</p>
+            </div>
+        </div>
+
+        <ul class="tool-box">
+            <li class="tool t-buy">
+                <img src="/img/casa.svg" alt="">
+                <p>House</p>
+            </li>
+
+            <li class="tool t-comerc">
+                <img src="/img/business.svg" alt="">
+                <p>Comercio</p>
+            </li>
+            <li class="tool t-monum">
+                <img src="/img/monument.svg" alt="">
+                <p>Monumento</p>
+            </li>
+            <li class="tool t-monum">
+                <img src="/img/tree.svg" alt="">
+                <p>Decoracão</p>
+            </li>
+            <li class="tool t-destruct">
+                <img src="/img/hammer.svg" alt="destruct">
+                <p>Destruir</p>
+            </li>
+            <li class="tool t-play">
+                <img src="/img/sortear.svg" alt="">
+                <p>Sortear</p>
+            </li>
+            <li class="tool t-tasks">
+                <img src="/img/prancheta.svg" alt="">
+                <p>Tarefas</p>
+            </li>
+        </ul>
+
+        <section class="selected-tool">
+            <img class="setaL" src="/img/seta.svg"/>
+            <img class="setaR" src="/img/seta.svg"/>
+            <h3 class="col-title"></h3>
+            <ul class="shop-box houses">
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">300 ex</div>
+                    </div>
+
+                    <img src="/houses/bungalow.png" alt="bungalow house">
+
+                    <h3 class="product-name">Bungalow</h3>
+                    <p class="product-value">R$ 60.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">600 ex</div>
+                    </div>
+
+                    <img src="/houses/bungalow-de-luxo.png" alt="bungalow house">
+
+                    <h3 class="product-name">Bungalow de Luxo</h3>
+                    <p class="product-value">R$ 90.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">700 ex</div>
+                    </div>
+
+                    <img src="/houses/single-house.png" alt="bungalow house">
+
+                    <h3 class="product-name">Single House</h3>
+                    <p class="product-value">R$ 90.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">900 ex</div>
+                    </div>
+
+                    <img src="/houses/townhouse.png" alt="bungalow house">
+
+                    <h3 class="product-name">Townhouse</h3>
+                    <p class="product-value">R$ 100.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">1000 ex</div>
+                    </div>
+
+                    <img src="/houses/townhouse-de-luxo.png" alt="bungalow house">
+
+                    <h3 class="product-name">Townhouse Luxuosa</h3>
+                    <p class="product-value">R$ 160.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/houses/duplex.png" alt="duplex">
+
+                    <h3 class="product-name">Duplex</h3>
+                    <p class="product-value">R$ 200.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">3000 ex</div>
+                    </div>
+
+                    <img src="/houses/duplex de luxo.png" alt="duplex">
+
+                    <h3 class="product-name">Duplex Luxuosa</h3>
+                    <p class="product-value">R$ 225.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">3000 ex</div>
+                    </div>
+
+                    <img src="/houses/three story.png" alt="duplex">
+
+                    <h3 class="product-name">Three Story</h3>
+                    <p class="product-value">R$ 300.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">5000 ex</div>
+                    </div>
+
+                    <img src="/houses/threee story de luxo.png" alt="duplex">
+
+                    <h3 class="product-name">Three Story Luxuosa</h3>
+                    <p class="product-value">R$ 325.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">10000 ex</div>
+                    </div>
+
+                    <img src="/houses/block-apartment-simple.png" alt="duplex">
+
+                    <h3 class="product-name">B. de Apartamento</h3>
+                    <p class="product-value">R$ 600.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">20000 ex</div>
+                    </div>
+
+                    <img src="/houses/block-apartment.png" alt="duplex">
+
+                    <h3 class="product-name">Apartamento Luxuoso </h3>
+                    <p class="product-value">R$ 1.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">10000 ex</div>
+                    </div>
+
+                    <img src="/houses/Loft Block.png" alt="duplex">
+
+                    <h3 class="product-name">B. de Loft</h3>
+                    <p class="product-value">R$ 800.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">20000 ex</div>
+                    </div>
+
+                    <img src="/houses/Loft Block Luxuoso.png" alt="duplex">
+
+                    <h3 class="product-name">B. de Loft Prime</h3>
+                    <p class="product-value">R$ 1.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/villa.png" alt="duplex">
+
+                    <h3 class="product-name">Villa</h3>
+                    <p class="product-value">R$ 2.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/massion.png" alt="duplex">
+
+                    <h3 class="product-name">Mansion Magazine</h3>
+                    <p class="product-value">R$ 3.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/villa luxo.png" alt="duplex">
+
+                    <h3 class="product-name">Villa de Luxo</h3>
+                    <p class="product-value">R$ 4.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/loft.png" alt="duplex">
+
+                    <h3 class="product-name">Loft</h3>
+                    <p class="product-value">R$ 2.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/sckyscraper.png" alt="duplex">
+
+                    <h3 class="product-name">Arranha-céus</h3>
+                    <p class="product-value">R$ 5.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">40000 ex</div>
+                    </div>
+
+                    <img src="/houses/Loft Prime.png" alt="duplex">
+
+                    <h3 class="product-name">Loft Prime</h3>
+                    <p class="product-value">R$ 7.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">20000 ex</div>
+                    </div>
+
+                    <img src="/houses/Chanteau.png" alt="duplex">
+
+                    <h3 class="product-name">Chanteau</h3>
+                    <p class="product-value">R$ 10.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">20000 ex</div>
+                    </div>
+
+                    <img src="/houses/skyscraper-prime.png" alt="duplex">
+
+                    <h3 class="product-name">Arranha-céus Prime</h3>
+                    <p class="product-value">R$ 15.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+            </ul>
+
+            <ul class="shop-box">
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">300 ex</div>
+                    </div>
+
+                    <img src="/Shop/pizza-shop.png" alt="Pizzaria">
+
+                    <h3 class="product-name">Pizzaria</h3>
+                    <p class="product-value">R$60.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">1000 ex</div>
+                    </div>
+
+                    <img src="/Shop/coffe-shop.png" alt="Cafeteria">
+
+                    <h3 class="product-name">Cafeteria</h3>
+                    <p class="product-value">R$100.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/florist.png" alt="Florista">
+
+                    <h3 class="product-name">Florista</h3>
+                    <p class="product-value">R$250.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/ice-cream.png" alt="Florista">
+
+                    <h3 class="product-name">Sorveteiria</h3>
+                    <p class="product-value">R$300.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/basketball.png" alt="Florista">
+
+                    <h3 class="product-name">Quadra de Basket</h3>
+                    <p class="product-value">R$2.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/jwrl.png" alt="Florista">
+
+                    <h3 class="product-name">Joalheiria</h3>
+                    <p class="product-value">R$250.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/mall (1).png" alt="Florista">
+
+                    <h3 class="product-name">Mercado</h3>
+                    <p class="product-value">R$2.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area">16m</div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/bank.png" alt="Florista">
+
+                    <h3 class="product-name">Banco</h3>
+                    <p class="product-value">R$3.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/night-club-premium.png" alt="Florista">
+
+                    <h3 class="product-name">Night Club</h3>
+                    <p class="product-value">R$4.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>                
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Shop/hospital.png" alt="Florista">
+
+                    <h3 class="product-name">Hospital</h3>
+                    <p class="product-value">R$5.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+            </ul>
+
+            <ul class="shop-box">
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area">2 m</div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/stones.png" alt="Florista">
+
+                    <h3 class="product-name">Pedras</h3>
+                    <p class="product-value">R$500.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/obelisk.png" alt="Obelisco">
+
+                    <h3 class="product-name">Obelisco</h3>
+                    <p class="product-value">R$600.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <!-- <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/london-eye.png" alt="London Eye">
+
+                    <h3 class="product-name">London Eye</h3>
+                    <p class="product-value">R$800.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li> -->
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/torii-gate.png" alt="Torii Gate">
+
+                    <h3 class="product-name">Torii Gate</h3>
+                    <p class="product-value">R$900.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/african-renaissance-monument.png" alt="Florista">
+
+                    <h3 class="product-name">Estatua Africana</h3>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/sphinx.png" alt="Florista">
+
+                    <h3 class="product-name">Esfinge</h3>
+                    <p class="product-value">R$1.500.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/arch-of-triumph.png" alt="Florista">
+
+                    <h3 class="product-name">Arco do Triunfo</h3>
+                    <p class="product-value">R$1.500.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/pyramids.png" alt="Florista">
+
+                    <h3 class="product-name">Piramides</h3>
+                    <p class="product-value">R$5.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/statue-of-liberty.png" alt="Florista">
+
+                    <h3 class="product-name">Estatua da Liberdade</h3>
+                    <p class="product-value">R$2.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/taj-mahal.png" alt="Taj Mahal">
+
+                    <h3 class="product-name">Taj Mahal</h3>
+                    <p class="product-value">R$2.200.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/tower-of-pisa.png" alt="Florista">
+
+                    <h3 class="product-name">Torre de Pisa</h3>
+                    <p class="product-value">R$2.650.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/cathedral-of-saint-basil.png" alt="Florista">
+
+                    <h3 class="product-name">Catedral de Santo Basil</h3>
+                    <p class="product-value">R$3.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/coliseum.png" alt="Florista">
+
+                    <h3 class="product-name">Coliseu</h3>
+                    <p class="product-value">R$4.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/vaticano.png" alt="Florista">
+
+                    <h3 class="product-name">Vaticano</h3>
+                    <p class="product-value">R$5.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/Monuments/capitol.png" alt="Florista">
+
+                    <h3 class="product-name">Capitolio</h3>
+                    <p class="product-value">R$6.000.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+            </ul>
+
+            <ul class="shop-box">
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/decoration/cypress.png" alt="Florista">
+
+                    <h3 class="product-name">Arbusto</h3>
+                    <p class="product-value">R$1.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/decoration/oak.png" alt="Florista">
+
+                    <h3 class="product-name">Carvalho</h3>
+                    <p class="product-value">R$2.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/decoration/Palm.png" alt="Florista">
+
+                    <h3 class="product-name">Palmeiras</h3>
+                    <p class="product-value">R$5.000,00</p>
+                    <div class="btn-buy">Comprar</div>                
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/decoration/lemonade.png" alt="Florista">
+
+                    <h3 class="product-name">Limonada</h3>
+                    <p class="product-value">R$30.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+                <li>
+                    <div class="mini-info">
+                        <div class="mini-area"></div>
+                        <div class="mini-progress">2000 ex</div>
+                    </div>
+
+                    <img src="/decoration/fonte.png" alt="Florista">
+
+                    <h3 class="product-name">Fonte</h3>
+                    <p class="product-value">R$60.000,00</p>
+                    <div class="btn-buy">Comprar</div>
+                </li>
+            </ul>
+
+            <ul></ul>
+            <ul></ul>
+        </section>
+
+        <section class="main">
+            <h3 class="main-prop">Propiedades</h3>
+            <ul class="main-list"></ul>
+        </section>
+
+        <footer class="info-final">
+            <p class="welcome"></p>
+        </footer>
+    </div>
+</body>
+</html>

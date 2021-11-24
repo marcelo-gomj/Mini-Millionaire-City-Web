@@ -1,0 +1,138 @@
+.inicio-title{
+    display: flex;
+    position: relative;
+    font-size: 4.5rem;
+    color: white;
+    justify-content: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0);
+}
+
+.version-title{
+    display: block;
+    bottom: 0px;
+    margin: auto 2%;
+    background: white;
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+    text-shadow: none;
+    padding: 2px 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+}
+
+.menu-inicio{
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    flex-direction: column;
+    text-align: center;
+    margin: 10% auto;
+    gap: 1rem;
+    width: 30%;
+}
+
+.menu-inicio li{
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.menu-inicio li:hover{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.menu-inicio li:nth-child(3){
+    color: white;
+    border: 2px solid rgb(255, 49, 49);
+    background-color: rgb(252, 49, 49);
+}
+
+.menu-inicio li:nth-child(3):hover{
+    border: 2px solid black;
+}
+
+.btn-users{
+    width: 100%;
+    margin: 5% 0%;
+}
+
+.create-user{
+    display: none;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: openUserCreate 500ms ease;
+}
+
+@keyframes openUserCreate {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.c-user--active{
+    display: block;
+}
+
+.user-form{
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1% 4%;
+    background-color: white;
+    width: 50%;
+}
+
+.create-user label{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.create-user input{
+    display: block;
+    border: none;
+    border-bottom: 2px solid;
+    padding-bottom: 1%;
+    margin: 15% auto 10%;
+    text-align: center;
+    width: 80%;
+    font-size: 1.4rem;
+    transition: border 500ms ease;
+}
+
+.btn-users{
+    display: flex;
+    justify-content: space-around;
+}
+
+.create-user button, .btn-confirm{
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: 22px;
+    padding: 0.5% 10%;
+    margin: 1% 0;
+}
+
+.create-user button:hover, .btn-confirm:hover{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.btn-confirm{
+    background-color: white;
+}
+
+.btn-cancel{
+    background-color: red;
+}
